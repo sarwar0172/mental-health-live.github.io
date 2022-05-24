@@ -1,0 +1,51 @@
+
+/* for large devices */
+@media screen and (max-width:1024px){
+    
+    #carouselExampleControls{
+        display:none;
+    }
+    .millde__style{
+        display:none;
+    }
+.login__from{
+    width:100%;
+}
+.from{
+    margin-left:25%;
+}
+.email__input,.password__input{
+  width:75%;
+}
+.login__button,.submit__button{
+    width:75%;
+}
+.hand__icon{
+    left:90%;
+}
+.millde_button_text{
+   
+   margin-left: 20%;
+}
+
+}  
+
+
+/* for medium devices */
+@media screen and (max-width:700px){
+    .from{
+        margin-left:20%;
+    }
+    .login__button{
+        width:75%;
+    }
+    .millde_button_text{
+   
+        margin-left: 5%;
+     }
+    
+}
+@media screen and (max-width:600px){
+    
+    
+}

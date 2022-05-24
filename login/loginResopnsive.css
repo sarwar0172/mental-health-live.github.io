@@ -1,0 +1,81 @@
+
+/* for large devices */
+@media screen and (max-width:1024px){
+    html{
+        background-color:rgb(118, 86, 232)
+    }
+    /* input form */
+    .login__from{
+        display:none;
+       
+    }
+    /* middle */
+    .millde__style{
+      display:none;
+    }
+/* service */
+.carousel{
+    height:vh;
+}
+.carousel-inner{
+    left:25%;
+    width:100%;
+    
+    }
+
+    .dots{
+        display:flex;
+        left:5%;
+        justify-content: center;
+        margin-bottom:15%;
+        }
+
+
+        /* hiddend button */
+
+        .hidden_button{
+            display: block;
+            display: flex;
+        }
+        .login__button{
+            width: 100%;
+            height:auto;
+            margin-bottom: 10px;
+            border: 2px solid #fff
+        }
+        .submit__button{
+            width: 100%;
+            height: auto;
+            margin-bottom:10px;
+        }
+        .submit__button:hover{
+            color: #fff;
+            background-color: rgb(171, 153, 238);
+        }
+        
+        /* chat icon */
+        .chat__icon{
+            color:#1dedfd
+        }
+        
+        /* hand */
+        .hand__icon{
+            left:90%;
+        }
+}
+
+
+/* for medium devices */
+@media screen and (max-width:700px){
+    .dots{
+        display:flex;
+        left:5%;
+        justify-content: center;
+        margin-bottom:25%;
+        }
+        .carousel-inner{
+            left:15%;
+            width:100%;
+            
+            }
+}

@@ -1,0 +1,45 @@
+
+/*========== 
+large device 
+===========*/
+@media screen and (max-width:1024px) {
+ 
+/* nav bar */
+.navbar-collapse{
+    flex-direction: column;
+    gap:2rem;
+}
+.navbar-nav>a{
+ text-align: center;
+}
+.nav_right_side>a{
+    text-align: center;
+}
+.nav_right_side{
+    flex-direction: column;
+    gap:2rem;
+}
+.nav_right_side>button{
+    padding: .7rem 3rem;
+}
+    /* footer */
+    .footer1{
+        grid-template-columns: 1fr;
+    }
+    .icon_buttons{
+        grid-row-start: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap:1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:766px){
+    .pakage_boxes{
+        grid-template-columns: 1fr;
+    } 
+    .left_text_bars{
+        grid-template-columns: 1fr 1fr;
+    }
+}

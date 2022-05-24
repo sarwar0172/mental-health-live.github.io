@@ -1,0 +1,93 @@
+@media screen and (max-width:1024px) {
+    /* ======
+    navbar
+    ======== */
+    .nav_right_side{
+        grid-template-columns: 1fr;
+        max-width:20rem;
+        margin-left: 0;
+        padding-left:0;
+      
+    }
+    .nav_right_side>button{
+       max-width:10rem;
+       min-height: 2rem;
+    }
+    .nav_left_side{
+        max-width: 10rem;
+        margin-left:1rem;
+    }
+    .navbar-collapse{
+        display:grid;
+       justify-content:center;
+      
+       
+    }
+    .login{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+  
+}
+@media screen and (max-width:766px){
+    /* =======
+    fist section
+    ========= */
+    .search_icon{
+        display: block;
+    }
+    .section1s_button{
+        display: none;
+    }
+    /* =======
+    section2
+    ========= */
+    .section_two{
+        grid-template-columns:1fr;
+      
+    }
+
+    .form-select{
+     width: 100%;
+    }
+    .section2_button{
+        margin: auto;
+         min-height: 3rem;
+         min-width: 12rem;
+    }
+    /* =======
+    sectio3
+    ======= */
+    .section3{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+    .section3_div4{
+        margin: auto;
+        width: 100%;
+    }
+    .section3_left_div{
+        background:#fff;
+        color:black;
+    }
+    .back_to_top_btn{
+        top:11.5rem;
+        left:40%;
+    }
+    /* ======
+    section4
+    ======== */
+    .section4_upper{
+        flex-direction: column;
+    }
+    .section4_upper_left{
+        max-width: 100%;
+    }
+    .section4_upper_right{
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 2rem;
+        width:30rem;
+    }
+}

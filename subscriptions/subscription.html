@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>subcriptions</title>
+  <!-- bootrastrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- font awosomee -->
+  <script src="https://kit.fontawesome.com/0db9eca216.js" crossorigin="anonymous"></script>
+
+  <!-- csss -->
+  <link rel="stylesheet" href="subscription.css">
+  <link rel="stylesheet" href="./responsive_sub.css">
+</head>
+
+<body>
+  <!--======================
+    nav section
+=======================-->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <div class="sub_header_img">
+        <svg width="140" class="ex_header_img" viewBox="0 0 500 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m253.153 87.713.037.04.039.036c1.217 1.139 2.724 1.692 4.417 1.692 1.73 0 3.269-.54 4.455-1.73l.019-.018.018-.02c1.136-1.22 1.688-2.73 1.688-4.427v-25.6c0-1.94.517-3.583 1.521-4.992l.007-.01.007-.01c1.047-1.522 2.468-2.745 4.304-3.666 1.814-.909 3.866-1.378 6.185-1.378 3.776 0 6.803 1.103 9.197 3.236l.013.013.014.011c2.302 1.956 3.615 5.183 3.615 10.063v22.333c0 1.697.552 3.207 1.688 4.427l.036.04.04.036c1.217 1.139 2.724 1.692 4.416 1.692 1.692 0 3.193-.554 4.365-1.73 1.21-1.213 1.816-2.736 1.816-4.465V60.953c0-5.216-1.003-9.73-3.093-13.466-2.009-3.699-4.817-6.523-8.412-8.427-3.515-1.954-7.49-2.912-11.884-2.912-3.267 0-6.337.579-9.195 1.75a22.894 22.894 0 0 0-4.953 2.764 5.703 5.703 0 0 0-1.412-2.33c-1.186-1.19-2.725-1.73-4.455-1.73-1.693 0-3.2.553-4.417 1.692l-.02.018-.019.02c-1.185 1.188-1.725 2.73-1.725 4.465v40.49c0 1.696.552 3.206 1.688 4.426Z"
+            fill="#ffffff"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m205.061 86.114.013.007.013.007c4.183 2.248 8.915 3.353 14.157 3.353 2.973 0 6.043-.548 9.202-1.62 3.208-1.067 5.944-2.468 8.168-4.229 1.343-1.03 2.144-2.423 2.05-4.12-.09-1.605-.903-2.964-2.159-4.07l-.012-.01-.012-.01c-1.099-.929-2.419-1.345-3.864-1.275-1.374.01-2.645.466-3.781 1.297l-.007.005-.007.005c-1.044.783-2.491 1.531-4.388 2.22-1.78.61-3.508.907-5.19.907-4.271 0-7.806-1.197-10.697-3.532-2.377-2.011-3.966-4.485-4.778-7.463h32.518c1.546 0 2.939-.474 4.052-1.499l.023-.021.022-.022c1.089-1.088 1.636-2.454 1.636-3.998 0-4.959-.943-9.393-2.878-13.26-1.877-3.936-4.645-7.029-8.29-9.24-3.673-2.288-8.018-3.398-12.967-3.398-5.018 0-9.526 1.143-13.478 3.469-3.936 2.255-7.035 5.418-9.283 9.457l-.004.007c-2.2 4.004-3.275 8.613-3.275 13.779 0 5.125 1.144 9.74 3.47 13.802l.007.013.008.013c2.378 3.977 5.63 7.124 9.731 9.426Zm21.482-35.75.007.007.006.007c1.786 1.827 3.021 4.094 3.679 6.85h-26.331c.811-2.767 2.231-5.045 4.245-6.877 2.373-2.157 5.564-3.303 9.736-3.303 3.761 0 6.587 1.146 8.658 3.316Z"
+            fill="#ffffff"></path>
+          <path
+            d="m143.72 79.216-.004.005c-.809 1.074-1.134 2.405-1.134 3.84 0 1.663.418 3.197 1.53 4.304 1.112 1.107 2.653 1.524 4.322 1.524H179.5c1.669 0 3.21-.417 4.322-1.524s1.53-2.641 1.53-4.303-.418-3.196-1.53-4.303c-1.112-1.107-2.653-1.524-4.322-1.524h-19.988l23.793-31.416.002-.004c.809-1.074 1.134-2.405 1.134-3.84 0-1.662-.418-3.196-1.53-4.303-1.112-1.107-2.653-1.524-4.322-1.524h-28.705c-1.669 0-3.209.416-4.322 1.524-1.112 1.107-1.53 2.64-1.53 4.303 0 1.662.418 3.195 1.53 4.303 1.113 1.107 2.653 1.523 4.322 1.523h17.712L143.72 79.216Zm268.462 10.265c-4.574 0-8.665-.923-12.273-2.77-3.608-1.91-6.474-4.68-8.6-8.31-2.062-3.63-3.093-8.057-3.093-13.279V40.296c0-1.019.355-1.879 1.063-2.58.709-.7 1.579-1.05 2.609-1.05 1.096 0 1.997.35 2.706 1.05.709.701 1.063 1.561 1.063 2.58v24.826c0 5.859 1.643 10.221 4.929 13.087 3.285 2.866 7.408 4.299 12.369 4.299 3.157 0 5.991-.605 8.504-1.815 2.577-1.21 4.606-2.866 6.088-4.968 1.482-2.101 2.223-4.49 2.223-7.164V39.778c0-1.083.322-1.942.966-2.58.709-.7 1.61-1.05 2.706-1.05 1.095 0 1.997.35 2.705 1.05.709.638 1.063 1.497 1.063 2.58v45.694c0 1.147-.354 2.07-1.063 2.77-.708.638-1.61.956-2.705.956-1.096 0-1.997-.318-2.706-.955-.644-.7-.966-1.624-.966-2.77v-3.538c-2.126 2.356-4.703 4.203-7.731 5.54-3.028 1.338-6.314 2.006-9.857 2.006Zm-34.103.001c-3.734 0-6.815-1.53-9.243-4.589-2.427-3.123-3.641-7.106-3.641-11.95V18.448c0-1.083.312-1.944.934-2.581.685-.701 1.556-1.052 2.614-1.052 1.058 0 1.898.351 2.521 1.052.685.637 1.027 1.498 1.027 2.581v54.495c0 2.74.529 4.971 1.587 6.692 1.12 1.72 2.521 2.581 4.201 2.581h2.334c.934 0 1.681.35 2.241 1.052.56.637.84 1.498.84 2.581 0 1.084-.404 1.976-1.213 2.677-.747.637-1.743.956-2.988.956h-1.214Zm-58.862-.413c-1.076 0-1.961-.32-2.658-.959-.632-.703-.949-1.597-.949-2.683V17.864c0-1.086.317-1.949.949-2.588.697-.703 1.582-1.054 2.658-1.054 1.076 0 1.93.351 2.563 1.054.696.64 1.044 1.502 1.044 2.588v43.604l26.768-24.437c1.645-1.47 3.196-1.406 4.651.191.696.767 1.013 1.597.949 2.492 0 .83-.379 1.565-1.139 2.204l-18.984 17.346 19.744 24.534c1.392 1.725 1.234 3.322-.475 4.791-.823.703-1.677.99-2.563.863-.886-.064-1.645-.511-2.278-1.342l-19.554-24.246-7.119 6.613v14.95c0 1.086-.348 1.98-1.044 2.683-.633.64-1.487.959-2.563.959Z"
+            fill="#ffffff"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M459.869 86.034c4.013 2.298 8.504 3.447 13.472 3.447 5.097 0 9.651-1.149 13.664-3.447 4.013-2.362 7.167-5.553 9.46-9.575 2.357-4.021 3.535-8.585 3.535-13.692 0-5.043-1.146-9.575-3.44-13.596-2.229-4.022-5.287-7.181-9.173-9.48-3.885-2.361-8.281-3.542-13.186-3.542-4.268 0-8.153.925-11.657 2.776-3.44 1.788-6.211 4.182-8.313 7.182v-28.15c0-1.15-.35-2.043-1.051-2.682-.637-.702-1.497-1.053-2.58-1.053-1.146 0-2.07.351-2.771 1.053-.637.639-.955 1.532-.955 2.681v67.511c0 1.15.35 2.043 1.051 2.681.637.702 1.497 1.053 2.58 1.053 1.146 0 2.07-.35 2.771-1.053.637-.638.955-1.532.955-2.68v-3.816a26.251 26.251 0 0 0 5.638 4.382Zm23.41-5.84c-2.93 1.723-6.243 2.585-9.938 2.585-3.63 0-6.911-.862-9.841-2.585a19.065 19.065 0 0 1-6.88-7.182c-1.656-3-2.484-6.415-2.484-10.245 0-3.766.828-7.15 2.484-10.15 1.656-3.063 3.949-5.457 6.88-7.18 2.93-1.724 6.211-2.586 9.841-2.586 3.695 0 7.008.862 9.938 2.586 2.93 1.723 5.223 4.117 6.879 7.18 1.72 3 2.58 6.384 2.58 10.15 0 3.83-.86 7.245-2.58 10.245a19.07 19.07 0 0 1-6.879 7.182Z"
+            fill="#ffffff"></path>
+          <path
+            d="M32.466 82.673c0-1.591.362-3.008 1.21-4.13l.004-.004.001-.002 28.735-37.66H40.443c-1.87 0-3.501-.465-4.655-1.61-1.153-1.143-1.62-2.757-1.62-4.607s.467-3.463 1.62-4.606c1.154-1.145 2.785-1.61 4.655-1.61h33.674c1.87 0 3.5.465 4.655 1.61 1.153 1.143 1.62 2.757 1.62 4.607 0 1.59-.361 3.007-1.21 4.13l-.003.003-28.636 37.663h24.642c1.87 0 3.501.464 4.656 1.609 1.153 1.143 1.62 2.757 1.62 4.607s-.468 3.463-1.62 4.606c-1.155 1.145-2.786 1.61-4.656 1.61H38.742c-1.87 0-3.502-.465-4.656-1.61-1.153-1.143-1.62-2.757-1.62-4.606Z"
+            fill="#ffffff"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M30.318 0h-.001a30.326 30.326 0 0 0-21.42 8.903A30.446 30.446 0 0 0 0 30.363v55.13a30.445 30.445 0 0 0 8.892 21.469 30.325 30.325 0 0 0 21.425 8.908h33.597c1.7.001 3.379.381 4.914 1.111l14.999 9.667A7.942 7.942 0 0 0 88.122 128h.02a6.65 6.65 0 0 0 4.669-1.891c1.3-1.276 2.111-3.137 2.126-5.478v-7.064l.762-.43a30.41 30.41 0 0 0 12.827-11.195 30.492 30.492 0 0 0 4.81-16.398v-55.18a30.43 30.43 0 0 0-8.874-21.446A30.314 30.314 0 0 0 83.071 0H30.318Zm33.57 108.756h.002a18.225 18.225 0 0 1 8.62 2.165l.04.023 15.145 9.749.033.024a.942.942 0 0 0 .118.075 2.93 2.93 0 0 0 .007-.218v-7.399a5.563 5.563 0 0 1 2.546-5.242l.028-.018 2.155-1.209.045-.021a23.29 23.29 0 0 0 9.917-8.595 23.355 23.355 0 0 0 3.709-12.6V30.367a23.325 23.325 0 0 0-6.812-16.44 23.24 23.24 0 0 0-16.412-6.825H30.282a23.239 23.239 0 0 0-16.395 6.834 23.322 23.322 0 0 0-6.803 16.43v55.176a23.323 23.323 0 0 0 6.811 16.451 23.239 23.239 0 0 0 16.422 6.826h.003l33.568-.063Z"
+            fill="#ffffff"></path>
+        </svg>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <div class="navbar-nav">
+          
+            <a class="r_item1" aria-current="page" href="../empresas/empresas.html">Our Experts</a>
+            <a class="r_item2" href="#">Become a member</a>
+    
+        </div>
+
+        <div class="nav_right_side">
+          
+            <a class="l_item1" aria-current="page" href="../especialistas/especialistas.html">For businesses</a>
+            <a class="l_item2" href="#">For Specialists</a>
+            <a class="l_item3" href="../login/login.html">login</a>
+      
+          <a type="submit" href="../singup/singup.html">restration</a>
+        </div>
+
+        <div class="nav_fontAwosome">
+          <a href="#" title="nav_icon"><i class="fa-brands fa-facebook"></i></a> 
+          <a href="#" title="nav_icon"><i class="fa-brands fa-instagram-square"></i></a> 
+          <a href="#"title="nav_icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!--==========
+  second section
+  ===========-->
+  <div class="content">
+    <div class="_sub_heading">
+      <h1>Discover our plans</h1>
+      <p>Get access to exclusive content and benefits</p>
+    </div>
+    <div class="pakage_boxes">
+      <div class="right_pakege_box">
+        <font class="R_box_heading">ZENKLUB MEMBER</font>
+        <font class="prize">BRL <span>99.00</span> </font>
+        <div class="cheakbox">
+          <p>monthly</p>
+          <div class="toggle_butt">
+            <input   type="checkbox" id="toggle-btn-1" checked>
+            <label for="toggle-btn-1"></label>
+          </div>
+          <p>yearly</p>
+        </div>
+
+        <div class="thick_line">
+          <i class="fa-solid fa-check left_tick"></i>
+          <p>Full access to the Zenklub content library</p>
+        </div>
+        <div class="thick_line">
+          <i class="fa-solid fa-check left_tick"></i>
+          <p>Unlimited history to your daily mood tags</p>
+        </div>
+        <div class="thick_line">
+          <i class="fa-solid fa-check left_tick"></i>
+          <p>Easy access to the entire community of psychologists, psychoanalysts, therapists and coaches</p>
+        </div>
+        <div class="thick_line">
+          <i class="fa-solid fa-check left_tick"></i>
+          <p>Priority service by our support team</p>
+        </div>
+
+        <div class="left_box_button">
+          <button type="button" class="btn">I want to be a member</button>
+        </div>
+        <div class="text_uder_btn">
+          <p>Cancel anytime.</p>
+          <p>Automatic renovation</p>
+        </div>
+
+
+      </div>
+      <div class="left_pakege_box">
+        <font class="l_box_heading">ZENKLUB FOR YOUR COMPANY</font>
+        <div class="img_corporate">
+          <img src="./img/corporate.svg" alt="">
+        </div>
+
+        <div class="right_thick_line">
+          <i class="fa-solid fa-check right_tick"></i>
+          <p>Emotional education and development via app</p>
+        </div>
+        <div class="right_thick_line">
+          <i class="fa-solid fa-check right_tick"></i>
+          <p>Online therapy sessions with professionals</p>
+        </div>
+        <div class="right_thick_line">
+          <i class="fa-solid fa-check right_tick"></i>
+          <p>Monthly report on the company's emotional health</p>
+        </div>
+        <div class="right_thick_line">
+          <i class="fa-solid fa-check right_tick"></i>
+          <p>Customized workshops and training</p>
+        </div>
+
+        <div class="right_box_button">
+          <button type="button" class="btn">I have code</button>
+        </div>
+        <div class="right_text_uder_btn">
+          <font>i want more information</font>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer1">
+    <div class="left_text_bars">
+      <div class="f1">
+        <h5> For businesses</h5>
+        <a href="">business plans</a>
+        <h5>I'm an expert</h5>
+        <a href="">How to be part of Zenklub?</a>
+        </ul>
+      </div>
+      <div class="f2">
+        <h5>Help</h5>
+        <a href="">Common questions</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms of use</a>
+      </div>
+      <div class="f3">
+        <h5>Support</h5>
+        <label for="">Users and collaborators:</label>
+        <a href="">info@zenklub.com</a>
+
+        <label for="">Companies:</label>
+        <a href="">corporative@zenklub.com</a>
+
+        <label for="">Professionals:</label>
+        <a href="">professionals@zenklub.com</a>
+      </div>
+      <div class="f4">
+        <h5>About Zenklub</h5>
+        <a href="">Work with us</a>
+        <a href="">blog</a>
+        <h5>Press</h5>
+        <a href="">press@zenklub.com</a>
+      </div>
+    </div>
+
+    <div class="icon_buttons">
+      <div class="f5">
+        <a  href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="f6">
+        <button  type="submit" class="btn btn-outline-secondary"><img src="./img/apple.svg" alt=""></button>
+        <button type="submit" class="btn btn-outline-secondary"> <img src="./img/google_paly.svg" alt=""></button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<!-- js -->
+<script src="./subscription.js"></script>
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
